@@ -1,0 +1,52 @@
+<!-- CABECALHO -->
+<div class="position-relative">
+    <h2 class="bg-primary text-white p-1 ps-3 fs-5 rounded-top m-0 position-relative" style="top: 10px;">Anexos</h2>
+</div>
+
+<!-- Primeira caixa, alinhada com o cabeçalho -->
+<div class="border border-dark p-4 mb-2 rounded d-flex flex-column flex-grow-1">
+    <!-- Container para os itens clonados -->
+    <div id="anexosContainer" class="d-flex flex-column flex-grow-1 border border-dark rounded p-3">
+        <!-- Template de anexo que   -->
+        <div class="position-relative d-flex ms-4 ">
+            <p class="bg-white text-black p-1 fs-10 m-0 position-relative anexo-titulo" style="top: -30px;">Itens <span class="anexo-id"></span></p>
+        </div>
+        <div id="templateAnexo" class="d-none pai"> 
+
+            <div class="d-flex flex-column flex-grow-1 py-2 mb-2">
+                <!-- TITULO -->
+                
+                <!--essa div aqui que deve sumir, se vc acha que deve fazer a apartir da classe pai acima tudo bem se funcionar ne -->
+                <div class="d-flex flex-column flex-grow-1 ms-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="d-flex me-3">
+                            <!-- esse que é o botão de -->
+                            <button class="btn btn-danger d-flex align-items-center justify-content-center me-2 remove-product-btn" style="width: 50px; height: 50px;" data-key="">
+                                <img src="../images/lata-de-lixo.png" alt="Ícone de Lixeira" class="img-fluid" style="width: 24px; height: 24px;">
+                            </button>
+                            <button class="btn btn-info d-flex align-items-center justify-content-center me-2 view-product-btn" style="width: 50px; height: 50px;" data-key="">
+                                <img src="../images/olho-aberto.png" alt="Ícone de Olho" class="img-fluid" style="width: 24px; height: 24px;">
+                            </button>
+                        </div>
+                        <!-- Título do anexo -->
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 anexo-nome">titulo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Segunda caixa que separa os clones do botão -->
+    <div class="p-4 mt-2 rounded d-flex justify-content-center">
+        <!-- Input para selecionar arquivos -->
+        <input type="file" id="fileInput" class="d-none" />
+        <!-- Botão Adicionar anexo -->
+        <button id="addAnexoBtn" class="bg-success rounded text-white" style="border: none; width: 100%;">
+            Incluir anexo
+        </button>
+    </div>
+</div>
+
+<!-- <script src="../js/anexos.js"></script> -->

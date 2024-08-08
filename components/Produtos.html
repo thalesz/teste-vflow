@@ -1,0 +1,82 @@
+<!-- CABECALHO -->
+<div class="position-relative">
+    <h2 class="bg-primary text-white p-1 ps-3 fs-5 rounded-top m-0 position-relative" style="top: 10px;">Produtos</h2>
+</div>
+
+<!-- INICIO BOX DE PRODUTOS -->
+<div id="produtosContainer" class="border border-dark p-4 mb-2 rounded d-flex flex-column-reverse">
+    <!-- BOX DE PRODUTO TEMPLATE -->
+    <div id="produtoTemplate" class="produto-component d-flex flex-column flex-md-row align-items-center mb-3 d-none" data-key="">
+        
+        <!-- BOTAO DE REMOVER -->
+        <button class="btn btn-danger d-flex align-items-center justify-content-center mb-3 me-4 remove-product-btn" style="width: 50px; height: 50px;" data-key="">
+            <img src="../images/lata-de-lixo.png" alt="Ícone de Lixeira" class="img-fluid" style="width: 24px; height: 24px;">
+        </button>
+    
+        <!-- BOX PRODUTO - FORM + IMG -->
+        <div class="d-flex flex-column flex-grow-1 border border-dark rounded py-2">
+            <!-- TITULO -->
+            <div class="position-relative d-flex ms-4">
+                <p class="bg-white text-black p-1 fs-10 m-0 position-relative produto-titulo" style="top: -22px;">Produto - <span class="produto-id"></span></p>
+            </div>
+            <!-- INICIO DO FORM DO PRODUTO -->
+            <div class="d-flex flex-column flex-md-row align-items-center mx-2">
+                <!-- IMAGEM -->
+                <div class="d-flex align-items-center justify-content-center rounded-circle mx-3" style="width: 120px; height: 120px; background-color: #6f42c1;">
+                    <img src="../images/caixa.png" alt="Ícone de Caixa" class="img-fluid" style="width: 60px; height: 60px;">
+                </div>
+                <!-- FORM -->
+                <div class="w-100">
+                    <form class="w-100" action="" method="post">
+                        <div class="row mx-2 my-4">
+                            <!-- INPUT NOME PRODUTO -->
+                            <div class="col-12">
+                                <label for="produto" class="form-label fs-6 fs-md-5 fs-lg-4">Produto</label>
+                                <input type="text" id="produto" class="form-control border border-dark produto-input" data-campo="nome">
+                            </div>
+    
+                            <div class="col-12 mt-4">
+                                <div class="row g-3">
+                                    <!-- dropdown -->
+                                    <div class="col-md-3">
+                                        <label for="dropdown" class="form-label fs-6 fs-md-5 fs-lg-4">UND. Medida</label>
+                                        <select id="dropdown" class="form-select border border-dark produto-input" data-campo="unidadeMedida">
+                                            <option selected>Escolha uma opção</option>
+                                            <option value="l">litro - l</option>
+                                            <option value="g">grama - g</option>
+                                            <option value="m">metro - m</option>
+                                            <option value="m³">metro cúbico - m³</option>
+                                        </select>
+                                    </div>
+                                    <!-- input qtde de estoque -->
+                                    <div class="col-md-3">
+                                        <label for="qtdeEstoque" class="form-label fs-6 fs-md-5 fs-lg-6">QTDE. em estoque</label>
+                                        <input type="text" id="qtdeEstoque" class="form-control border border-dark produto-input" data-campo="qtdeEstoque">
+                                    </div>
+                                    <!-- input valor -->
+                                    <div class="col-md-3">
+                                        <label for="valorUnitario" class="form-label fs-6 fs-md-5 fs-lg-4">Valor unitário</label>
+                                        <input type="text" id="valorUnitario" class="form-control border border-dark produto-input" data-campo="valorUnitario">
+                                    </div>
+                                    <!-- input valor total -->
+                                    <div class="col-md-3">
+                                        <label for="valorTotal" class="form-label fs-6 fs-md-5 fs-lg-4">Valor Total</label>
+                                        <input type="text" id="valorTotal" class="form-control border border-dark produto-total" data-campo="valorTotal" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- botao de adicionar outro produto -->
+    <div class="w-100 d-flex justify-content-center mt-auto">
+        <button id="addProductBtn" class="bg-success rounded text-white" style="border: none; width: 100%;">
+            Adicionar produto
+        </button>
+    </div>
+</div>
+
+ <!-- <script src="../js/produtos.js"></script>   -->
