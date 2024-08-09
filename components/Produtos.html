@@ -1,6 +1,6 @@
 <!-- CABECALHO -->
 <div class="position-relative">
-    <h2 class="bg-primary text-white p-1 ps-3 fs-5 rounded-top m-0 position-relative" style="top: 10px;">Produtos</h2>
+    <h2 class=" text-white p-1 ps-3 fs-5 rounded-top m-0 position-relative py-2" style="top: 10px; background-color: #0085B2;">Produtos</h2>
 </div>
 
 <!-- INICIO BOX DE PRODUTOS -->
@@ -9,8 +9,8 @@
     <div id="produtoTemplate" class="produto-component d-flex flex-column flex-md-row align-items-center mb-3 d-none" data-key="">
         
         <!-- BOTAO DE REMOVER -->
-        <button class="btn btn-danger d-flex align-items-center justify-content-center mb-3 me-4 remove-product-btn" style="width: 50px; height: 50px;" data-key="">
-            <img src="../images/lata-de-lixo.png" alt="Ícone de Lixeira" class="img-fluid" style="width: 24px; height: 24px;">
+        <button class="btn d-flex align-items-center justify-content-center mb-3 me-4 remove-product-btn" style="width: 50px; height: 50px; background-color: #DA0000;" data-key="">
+            <img src="../images/lata-de-lixo.png" alt="Ícone de Lixeira" class="img-fluid" style="width: 24px; height: 24px; ">
         </button>
     
         <!-- BOX PRODUTO - FORM + IMG -->
@@ -22,7 +22,7 @@
             <!-- INICIO DO FORM DO PRODUTO -->
             <div class="d-flex flex-column flex-md-row align-items-center mx-2">
                 <!-- IMAGEM -->
-                <div class="d-flex align-items-center justify-content-center rounded-circle mx-3" style="width: 120px; height: 120px; background-color: #6f42c1;">
+                <div class="d-flex align-items-center justify-content-center rounded-circle mx-3" style="width: 120px; height: 120px; background-color: #8694CE;">
                     <img src="../images/caixa.png" alt="Ícone de Caixa" class="img-fluid" style="width: 60px; height: 60px;">
                 </div>
                 <!-- FORM -->
@@ -59,10 +59,12 @@
                                         <input type="text" id="valorUnitario" class="form-control border border-dark produto-input" data-campo="valorUnitario">
                                     </div>
                                     <!-- input valor total -->
+                                    <!-- input valor total -->
                                     <div class="col-md-3">
                                         <label for="valorTotal" class="form-label fs-6 fs-md-5 fs-lg-4">Valor Total</label>
-                                        <input type="text" id="valorTotal" class="form-control border border-dark produto-total" data-campo="valorTotal" readonly>
+                                        <input type="text" id="valorTotal" class="form-control border border-dark produto-total" data-campo="valorTotal" readonly disabled style="background-color:grey;">
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -73,10 +75,9 @@
     </div>
     <!-- botao de adicionar outro produto -->
     <div class="w-100 d-flex justify-content-center mt-auto">
-        <button id="addProductBtn" class="bg-success rounded text-white" style="border: none; width: 100%;">
+        <button id="addProductBtn" class="py-2 rounded text-white" style="border: none; width: 120rem; background-color: #019E0F;">
             Adicionar produto
         </button>
     </div>
 </div>
 
- <!-- <script src="../js/produtos.js"></script>   -->
